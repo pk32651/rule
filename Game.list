@@ -1,10 +1,3 @@
-# NAME: 2KGames
-# TOTAL: 4
-DOMAIN-SUFFIX,2k.com
-DOMAIN-SUFFIX,2kcoretech.online
-DOMAIN-SUFFIX,2kgames.com
-DOMAIN-SUFFIX,take2games.com
-
 # NAME: Origin
 # TOTAL: 7
 DOMAIN,cloudsync-prod.s3.amazonaws.com
