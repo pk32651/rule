@@ -3,7 +3,9 @@
 # 域名后缀匹配
 DOMAIN-SUFFIX,qichiyu.com
 DOMAIN-SUFFIX,freegecko.com
-DOMAIN-SUFFIX,www.myd02.com
+DOMAIN-SUFFIX,myd02.com
+DOMAIN-SUFFIX,hanime1.me
+DOMAIN-SUFFIX,v2ex.com
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
