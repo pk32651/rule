@@ -20,6 +20,12 @@ DOMAIN-SUFFIX,isekai.ch
 DOMAIN-SUFFIX,acg.rw
 DOMAIN-SUFFIX,hentaimama.io
 DOMAIN-SUFFIX,ohentai.org
+DOMAIN-SUFFIX,hanime.tv
+DOMAIN-SUFFIX,avbebe.com
+DOMAIN-SUFFIX,hacg.xyz
+DOMAIN-SUFFIX,h-ciyuan.com
+DOMAIN-SUFFIX,acgrw.net
+
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
