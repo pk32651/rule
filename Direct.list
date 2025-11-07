@@ -1,45 +1,42 @@
-# 直连补充列表(国内域名不解析时，防止走代理使用)
+# IPv6 全部直连（避免走代理）
+IP-CIDR6,::/0,no-resolve
 
-# MyList
-# 域名后缀匹配
+# 国内系统服务直连
 DOMAIN-SUFFIX,time.windows.com
-DOMAIN-SUFFIX,lanzov.com
 DOMAIN-SUFFIX,hao123.com
+DOMAIN-SUFFIX,lanzov.com
 DOMAIN-SUFFIX,fxg.jinritemai.com
 
-# 域名关键字匹配
+# 国内搜索引擎直连
 DOMAIN-KEYWORD,baidu
+DOMAIN-SUFFIX,sogou.com
+DOMAIN-SUFFIX,so.com
 
-# IP段匹配
-IP-CIDR,219.146.1.66/32,no-resolve
-IP-CIDR6,::/0
-
-# 国内DNS
+# 国内 DNS 服务直连
 DOMAIN-SUFFIX,dns.alidns.com
 DOMAIN-SUFFIX,doh.pub
-IP-CIDR,219.146.1.66/32
-IP-CIDR,219.147.1.66/32
-IP-CIDR,119.29.29.29/32
-IP-CIDR,223.5.5.5/32
-IP-CIDR,223.6.6.6/32
-IP-CIDR,180.76.76.76/32
-IP-CIDR,119.29.29.29/32
-IP-CIDR,101.226.4.6/32
-IP-CIDR,1.2.4.8/32
-IP-CIDR,202.96.128.86/32
+DOMAIN-SUFFIX,dns.tencent.com
+DOMAIN-SUFFIX,dns.10010.com
+IP-CIDR,219.146.1.66/32,no-resolve
+IP-CIDR,219.147.1.66/32,no-resolve
+IP-CIDR,119.29.29.29/32,no-resolve
+IP-CIDR,223.5.5.5/32,no-resolve
+IP-CIDR,223.6.6.6/32,no-resolve
+IP-CIDR,180.76.76.76/32,no-resolve
+IP-CIDR,101.226.4.6/32,no-resolve
+IP-CIDR,1.2.4.8/32,no-resolve
+IP-CIDR,202.96.128.86/32,no-resolve
 
-# Public Direct CDN 公共直连
-#DOMAIN-SUFFIX,ajax.aspnetcdn.com
-#DOMAIN-SUFFIX,ajax.cloudflare.com
-#DOMAIN-SUFFIX,cdnjs.cloudflare.com
-#DOMAIN-SUFFIX,code.jquery.com
+# 公共 CDN 直连（国内节点）
 DOMAIN-SUFFIX,baomitu.com
 DOMAIN-SUFFIX,bootcss.com
 DOMAIN-SUFFIX,jiasule.com
 DOMAIN-SUFFIX,staticfile.org
 DOMAIN-SUFFIX,upaiyun.com
+DOMAIN-SUFFIX,cdn.jsdelivr.net
+DOMAIN-SUFFIX,cdn.bootcdn.net
 
-# Xunlei 迅雷
+# 迅雷相关域名直连
 DOMAIN-SUFFIX,00cdn.com
 DOMAIN-SUFFIX,88cdn.com
 DOMAIN-SUFFIX,kanimg.com
@@ -48,3 +45,5 @@ DOMAIN-SUFFIX,p2cdn.com
 DOMAIN-SUFFIX,sandai.net
 DOMAIN-SUFFIX,thundercdn.com
 DOMAIN-SUFFIX,xunlei.com
+
+
