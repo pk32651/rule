@@ -17,6 +17,8 @@ DOMAIN-SUFFIX,dns.alidns.com
 DOMAIN-SUFFIX,doh.pub
 DOMAIN-SUFFIX,dns.tencent.com
 DOMAIN-SUFFIX,dns.10010.com
+DOMAIN-SUFFIX,geckoiplc.top
+DOMAIN-SUFFIX,the-best-airport.com
 IP-CIDR,219.146.1.66/32,no-resolve
 IP-CIDR,219.147.1.66/32,no-resolve
 IP-CIDR,119.29.29.29/32,no-resolve
