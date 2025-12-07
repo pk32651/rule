@@ -69,3 +69,80 @@ IP-CIDR,185.222.222.222/32,no-resolve
 IP-CIDR,208.67.222.222/32,no-resolve
 IP-CIDR,208.67.220.220/32,no-resolve
 IP-CIDR,101.101.101.101/32,no-resolve
+
+#AI WORLD 20250712
+# OpenAI / ChatGPT 专用域名
+# 必须全部走代理
+
+# 主 API
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,api.openai.com
+
+# ChatGPT 新前端（2024 改为 chatgpt.com）
+DOMAIN-SUFFIX,chatgpt.com
+
+# Websocket / SSE 重要域名
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openaicomcdn.com
+
+# 资源 CDN
+DOMAIN-SUFFIX,cdn.openai.com
+
+# 登录认证
+DOMAIN-SUFFIX,auth.openai.com
+DOMAIN-SUFFIX,accounts.openai.com
+
+# ChatGPT 客户端服务
+DOMAIN-SUFFIX,openai.azure.com
+DOMAIN-SUFFIX,openaicomapi.trafficmanager.net
+
+# App 专用
+DOMAIN-SUFFIX,ios.chat.openai.com
+DOMAIN-SUFFIX,android.chat.openai.com
+
+# 内部服务（稳定性很关键）
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,intercom.io
+
+# ====== ChatGPT / OpenAI ======
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,api.openai.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openaicomcdn.com
+DOMAIN-SUFFIX,openaicomapi.trafficmanager.net
+DOMAIN-SUFFIX,cdn.openai.com
+DOMAIN-SUFFIX,auth.openai.com
+DOMAIN-SUFFIX,ios.chat.openai.com
+DOMAIN-SUFFIX,android.chat.openai.com
+
+# ====== Google Gemini ======
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,gemini.google.com
+
+# ====== Claude（Anthropic）======
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,api.anthropic.com
+
+# ====== Midjourney（依赖 Discord）======
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+
+# ====== Perplexity ======
+DOMAIN-SUFFIX,perplexity.ai
+
+# ====== Stability AI ======
+DOMAIN-SUFFIX,stability.ai
+DOMAIN-SUFFIX,api.stability.ai
+
+# ====== Groq ======
+DOMAIN-SUFFIX,groq.com
+DOMAIN-SUFFIX,api.groq.com
+
+# ====== ElevenLabs（AI语音）======
+DOMAIN-SUFFIX,elevenlabs.io
+
+
