@@ -153,4 +153,18 @@ DOMAIN-SUFFIX,api.groq.com
 # ====== ElevenLabs（AI语音）======
 DOMAIN-SUFFIX,elevenlabs.io
 
+# ====== PayPal 核心域名 (Core for API, Checkout, IPN) ======
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,paypalc3.com
+DOMAIN-SUFFIX,paypalc3.net
+DOMAIN-SUFFIX,paypalcorp.com
+DOMAIN-SUFFIX,paypal-mktg.com
+DOMAIN-SUFFIX,paypal.me
+
+# ====== PayPal 沙盒与IPN验证（可选）======
+DOMAIN-SUFFIX,api-m.paypal.com
+DOMAIN-SUFFIX,api-m.sandbox.paypal.com
+DOMAIN-SUFFIX,ipnpb.paypal.com
+DOMAIN-SUFFIX,ipnpb.sandbox.paypal.com
 
