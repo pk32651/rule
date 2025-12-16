@@ -1,5 +1,5 @@
 # IPv6 全部直连（避免走代理）
-IP-CIDR6,::/0,no-resolve
+#IP-CIDR6,::/0,no-resolve
 
 # 国内系统服务直连
 DOMAIN-SUFFIX,time.windows.com
