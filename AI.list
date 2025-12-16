@@ -5,47 +5,134 @@ DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,Claude
 # 域名后缀匹配
 # 域名后缀匹配
-DOMAIN,copilot.microsoft.com
-DOMAIN-SUFFIX,bing.com
+# 国外DNS
+DOMAIN-SUFFIX,dns.google
+DOMAIN-SUFFIX,dns.google.com
+DOMAIN-SUFFIX,cloudflare-dns.com
+DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
+DOMAIN-SUFFIX,dns.quad9.net
+DOMAIN-SUFFIX,doh.opendns.com
+DOMAIN-SUFFIX,dns.umbrella.com
+DOMAIN-SUFFIX,dns.nextdns.io
+DOMAIN-SUFFIX,dns.adguard.com
+DOMAIN-SUFFIX,doh.mullvad.net
+DOMAIN-SUFFIX,doh.cleanbrowsing.org
+DOMAIN-SUFFIX,doh.ultradns.com
+DOMAIN-SUFFIX,doh.powerdns.org
+DOMAIN-SUFFIX,doh.libredns.gr
+DOMAIN-SUFFIX,doh.de.blahdns.com
+DOMAIN-SUFFIX,doh.jp.blahdns.com
+DOMAIN-SUFFIX,doh.dnsforge.de
+DOMAIN-SUFFIX,doh.snopyta.org
+DOMAIN-SUFFIX,doh.digitale-gesellschaft.ch
+DOMAIN-SUFFIX,doh.surfnet.nl
+DOMAIN-SUFFIX,doh.securedns.eu
+DOMAIN-SUFFIX,dot.sb
+DOMAIN-SUFFIX,doh.dns.sb
+DOMAIN-SUFFIX,hk-hkg.doh.sb
+IP-CIDR,8.8.8.8/32,no-resolve
+IP-CIDR,8.8.4.4/32,no-resolve
+IP-CIDR,1.1.1.1/32,no-resolve
+IP-CIDR,1.0.0.1/32,no-resolve
+IP-CIDR,185.222.222.222/32,no-resolve
+IP-CIDR,208.67.222.222/32,no-resolve
+IP-CIDR,208.67.220.220/32,no-resolve
+IP-CIDR,101.101.101.101/32,no-resolve
 
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,events.statsigapi.net
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,identrust.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
+#AI WORLD 20250712
+# OpenAI / ChatGPT 专用域名
+# 必须全部走代理
+
+# 主 API
 DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,api.openai.com
+
+# ChatGPT 新前端（2024 改为 chatgpt.com）
+DOMAIN-SUFFIX,chatgpt.com
+
+# Websocket / SSE 重要域名
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openaicomcdn.com
+
+# 资源 CDN
+DOMAIN-SUFFIX,cdn.openai.com
+
+# 登录认证
+DOMAIN-SUFFIX,auth.openai.com
+DOMAIN-SUFFIX,accounts.openai.com
+
+# ChatGPT 客户端服务
+DOMAIN-SUFFIX,openai.azure.com
+DOMAIN-SUFFIX,openaicomapi.trafficmanager.net
+
+# App 专用
+DOMAIN-SUFFIX,ios.chat.openai.com
+DOMAIN-SUFFIX,android.chat.openai.com
+
+# 内部服务（稳定性很关键）
 DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,circumlunar.space
-DOMAIN-SUFFIX,vulpes.one
-DOMAIN-SUFFIX,mozz.us
-DOMAIN-SUFFIX,conman.org
-DOMAIN-SUFFIX,bortzmeyer.org
-DOMAIN-SUFFIX,groq.com
-DOMAIN-SUFFIX,difyai.com
-DOMAIN-SUFFIX,genspark.ai
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,intercom.io
 
-DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,x.ai
+# ====== ChatGPT / OpenAI ======
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,api.openai.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openaicomcdn.com
+DOMAIN-SUFFIX,openaicomapi.trafficmanager.net
+DOMAIN-SUFFIX,cdn.openai.com
+DOMAIN-SUFFIX,auth.openai.com
+DOMAIN-SUFFIX,ios.chat.openai.com
+DOMAIN-SUFFIX,android.chat.openai.com
 
+# ====== Google Gemini ======
 DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,signalr.net
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,g.co
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,fonts.gstatic.com
 
-DOMAIN-SUFFIX,meta.ai
-DOMAIN-SUFFIX,metademolab.com
+# ====== Claude（Anthropic）======
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,api.anthropic.com
+
+# ====== Midjourney（依赖 Discord）======
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+
+# ====== Perplexity ======
 DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,app.clipchamp.com
+
+# ====== Stability AI ======
+DOMAIN-SUFFIX,stability.ai
+DOMAIN-SUFFIX,api.stability.ai
+
+# ====== Groq ======
+DOMAIN-SUFFIX,groq.com
+DOMAIN-SUFFIX,api.groq.com
+
+# ====== ElevenLabs（AI语音）======
+DOMAIN-SUFFIX,elevenlabs.io
+
+# ====== PayPal 核心域名 (Core for API, Checkout, IPN) ======
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,paypalc3.com
+DOMAIN-SUFFIX,paypalc3.net
+DOMAIN-SUFFIX,paypalcorp.com
+DOMAIN-SUFFIX,paypal-mktg.com
+DOMAIN-SUFFIX,paypal.me
+
+# ====== PayPal 沙盒与IPN验证（可选）======
+DOMAIN-SUFFIX,api-m.paypal.com
+DOMAIN-SUFFIX,api-m.sandbox.paypal.com
+DOMAIN-SUFFIX,ipnpb.paypal.com
+DOMAIN-SUFFIX,ipnpb.sandbox.paypal.com
