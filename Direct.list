@@ -7,6 +7,12 @@ DOMAIN-SUFFIX,hao123.com
 DOMAIN-SUFFIX,lanzov.com
 DOMAIN-SUFFIX,fxg.jinritemai.com
 
+#自定义加入直连
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,aliapp.org
+DOMAIN-SUFFIX,tanx.com
+DOMAIN-SUFFIX,usrpubtrk.com
+
 # ====== 自定义影视/动漫/直播直连 ======
 DOMAIN-SUFFIX,kkys02.com
 DOMAIN-SUFFIX,eacg1.com
