@@ -1,0 +1,14 @@
+# ====== Steam 修复 ======
+# 修复库存、市场打不开 (社区域名)
+DOMAIN-SUFFIX,steamcommunity.com
+# 修复联机被直连 (日本/香港服务器)
+DOMAIN-SUFFIX,steamserver.net
+# 修复部分图片/头像不显示
+DOMAIN-SUFFIX,steamcontent.com
+
+# ====== Google Play 下载修复 ======
+# 安卓下载核心域名 (解决一直转圈)
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,googleusercontent.com
+# 修复 Google 服务框架连接问题
+DOMAIN-SUFFIX,googleapis.cn
