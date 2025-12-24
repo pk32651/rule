@@ -98,6 +98,10 @@ DOMAIN-SUFFIX,g.co
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,fonts.gstatic.com
+# ====== Google Play 下载修复 ======
+# 修复 Google 服务框架连接问题
+DOMAIN-SUFFIX,googleapis.cn
+
 
 # ====== Claude（Anthropic）======
 DOMAIN-SUFFIX,anthropic.com
