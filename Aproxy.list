@@ -5,7 +5,6 @@ DOMAIN-SUFFIX,steamcommunity.com
 # 修复联机被直连 (日本/香港服务器)
 DOMAIN-SUFFIX,steamserver.net
 # 修复部分图片/头像不显示
-DOMAIN-SUFFIX,steamcontent.com
 
 # ====== Google Play 下载修复 ======
 # 安卓下载核心域名 (解决一直转圈)
