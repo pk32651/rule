@@ -111,8 +111,11 @@ DOMAIN-SUFFIX,sandai.net
 DOMAIN-SUFFIX,thundercdn.com
 DOMAIN-SUFFIX,xunlei.com
 
-# 个人常用
+# ====== 工作与漏网域名补全 ======
+# 慧测 (涵盖 login, erp 等所有子域名)
 DOMAIN-SUFFIX,huice.com
-DOMAIN-SUFFIX,erp.huice.com
-DOMAIN-SUFFIX,login.huice.com
-
+# 抱乐猫 (涵盖 api 等所有子域名)
+DOMAIN-SUFFIX,baolemao.com
+# 如果那个IP是你直接通过IP访问的(不是通过域名)，则加这一条；
+# 如果那个IP只是域名解析出来的结果，上面两条就够了，不用加IP。
+#IP-CIDR,14.215.58.181/32,no-resolve
