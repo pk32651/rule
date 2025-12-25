@@ -112,11 +112,15 @@ DOMAIN-SUFFIX,thundercdn.com
 DOMAIN-SUFFIX,xunlei.com
 
 # ====== 工作与漏网域名补全 ======
-# 慧测 (涵盖 login, erp 等所有子域名)
-DOMAIN-SUFFIX,huice.com
 # 抱乐猫 (涵盖 api 等所有子域名)
-DOMAIN-SUFFIX,baolemao.com
 DOMAIN-SUFFIX,wdtdata.com
-# 如果那个IP是你直接通过IP访问的(不是通过域名)，则加这一条；
-# 如果那个IP只是域名解析出来的结果，上面两条就够了，不用加IP。
-#IP-CIDR,14.215.58.181/32,no-resolve
+# ====== 慧策 & 旺店通 (ERP 工作台全家桶) ======
+# 核心主域名
+DOMAIN-SUFFIX,huice.com
+# 旺店通老域名 (关键！登录验证常走这里)
+DOMAIN-SUFFIX,wangdian.cn
+DOMAIN-SUFFIX,wangdian.com
+# API 数据接口
+DOMAIN-SUFFIX,wdtdata.com
+# 静态资源可能涉及的阿里系 (通常 ChinaMax 已包含，但为了保险建议加上)
+DOMAIN-SUFFIX,alicdn.com
