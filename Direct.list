@@ -116,6 +116,7 @@ DOMAIN-SUFFIX,xunlei.com
 DOMAIN-SUFFIX,huice.com
 # 抱乐猫 (涵盖 api 等所有子域名)
 DOMAIN-SUFFIX,baolemao.com
+DOMAIN-SUFFIX,wdtdata.com
 # 如果那个IP是你直接通过IP访问的(不是通过域名)，则加这一条；
 # 如果那个IP只是域名解析出来的结果，上面两条就够了，不用加IP。
 #IP-CIDR,14.215.58.181/32,no-resolve
