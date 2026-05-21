@@ -1,142 +1,64 @@
-# 内容：OpenAi Bard anthropic
-# 域名关键字匹配
+# =========================================================
+# 👽 纯净版 AI 大模型精准分流规则集 (正向增量版)
+# 剔除了会导致严重风控的全局 google/youtube 泛域名
+# =========================================================
+
+# ====== 1. OpenAI / ChatGPT (去重全量整合) ======
 DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,anthropic
-DOMAIN-KEYWORD,Claude
-# 域名后缀匹配
-# 域名后缀匹配
-# 国外DNS
-DOMAIN-SUFFIX,dns.google
-DOMAIN-SUFFIX,dns.google.com
-DOMAIN-SUFFIX,cloudflare-dns.com
-DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
-DOMAIN-SUFFIX,dns.quad9.net
-DOMAIN-SUFFIX,doh.opendns.com
-DOMAIN-SUFFIX,dns.umbrella.com
-DOMAIN-SUFFIX,dns.nextdns.io
-DOMAIN-SUFFIX,dns.adguard.com
-DOMAIN-SUFFIX,doh.mullvad.net
-DOMAIN-SUFFIX,doh.cleanbrowsing.org
-DOMAIN-SUFFIX,doh.ultradns.com
-DOMAIN-SUFFIX,doh.powerdns.org
-DOMAIN-SUFFIX,doh.libredns.gr
-DOMAIN-SUFFIX,doh.de.blahdns.com
-DOMAIN-SUFFIX,doh.jp.blahdns.com
-DOMAIN-SUFFIX,doh.dnsforge.de
-DOMAIN-SUFFIX,doh.snopyta.org
-DOMAIN-SUFFIX,doh.digitale-gesellschaft.ch
-DOMAIN-SUFFIX,doh.surfnet.nl
-DOMAIN-SUFFIX,doh.securedns.eu
-DOMAIN-SUFFIX,dot.sb
-DOMAIN-SUFFIX,doh.dns.sb
-DOMAIN-SUFFIX,hk-hkg.doh.sb
-IP-CIDR,8.8.8.8/32,no-resolve
-IP-CIDR,8.8.4.4/32,no-resolve
-IP-CIDR,1.1.1.1/32,no-resolve
-IP-CIDR,1.0.0.1/32,no-resolve
-IP-CIDR,185.222.222.222/32,no-resolve
-IP-CIDR,208.67.222.222/32,no-resolve
-IP-CIDR,208.67.220.220/32,no-resolve
-IP-CIDR,101.101.101.101/32,no-resolve
-
-#AI WORLD 20250712
-# OpenAI / ChatGPT 专用域名
-# 必须全部走代理
-
-# 主 API
 DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,api.openai.com
-
-# ChatGPT 新前端（2024 改为 chatgpt.com）
 DOMAIN-SUFFIX,chatgpt.com
-
-# Websocket / SSE 重要域名
+DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openaicomcdn.com
-
-# 资源 CDN
 DOMAIN-SUFFIX,cdn.openai.com
-
-# 登录认证
-DOMAIN-SUFFIX,auth.openai.com
-DOMAIN-SUFFIX,accounts.openai.com
-
-# ChatGPT 客户端服务
+DOMAIN-SUFFIX,auth0.openai.com
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,openai.azure.com
 DOMAIN-SUFFIX,openaicomapi.trafficmanager.net
-
-# App 专用
 DOMAIN-SUFFIX,ios.chat.openai.com
 DOMAIN-SUFFIX,android.chat.openai.com
 
-# 内部服务（稳定性很关键）
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,intercom.io
-
-# ====== ChatGPT / OpenAI ======
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,api.openai.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,openaicomcdn.com
-DOMAIN-SUFFIX,openaicomapi.trafficmanager.net
-DOMAIN-SUFFIX,cdn.openai.com
-DOMAIN-SUFFIX,auth.openai.com
-DOMAIN-SUFFIX,ios.chat.openai.com
-DOMAIN-SUFFIX,android.chat.openai.com
-
-# ====== Google Gemini ======
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,ai.google.dev
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,google.com
-DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,gvt1.com
-DOMAIN-SUFFIX,g.co
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,ytimg.com
-DOMAIN-SUFFIX,fonts.gstatic.com
-# ====== Google Play 下载修复 ======
-# 修复 Google 服务框架连接问题
-DOMAIN-SUFFIX,googleapis.cn
-
-
-# ====== Claude（Anthropic）======
+# ====== 2. Anthropic / Claude (全量整合) ======
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,claude
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,api.anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claudeusercontent.com
 
-# ====== Midjourney（依赖 Discord）======
+# ====== 3. Google Gemini (精准劫持，绝不误伤普通搜索与视频) ======
+DOMAIN,gemini.google.com
+DOMAIN,bard.google.com
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN,proactivebackend-pa.googleapis.com
+
+# ====== 4. xAI / Grok (2026 最新主流 AI) ======
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+
+# ====== 5. DeepSeek (国产之光大模型) ======
+DOMAIN-SUFFIX,deepseek.com
+
+# ====== 6. 微软 Copilot ======
+DOMAIN,copilot.microsoft.com
+DOMAIN,sydney.bing.com
+
+# ====== 7. Perplexity (AI 搜索) ======
+DOMAIN-SUFFIX,perplexity.ai
+
+# ====== 8. Midjourney & Discord (AI 绘画全家桶) ======
+DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,discord.com
 DOMAIN-SUFFIX,discordapp.com
 DOMAIN-SUFFIX,discordapp.net
 
-# ====== Perplexity ======
-DOMAIN-SUFFIX,perplexity.ai
-
-# ====== Stability AI ======
+# ====== 9. Stability AI (SD 绘画后端) ======
 DOMAIN-SUFFIX,stability.ai
 DOMAIN-SUFFIX,api.stability.ai
 
-# ====== Groq ======
+# ====== 10. Groq (极速推理) ======
 DOMAIN-SUFFIX,groq.com
 DOMAIN-SUFFIX,api.groq.com
 
-# ====== ElevenLabs（AI语音）======
+# ====== 11. ElevenLabs (主流 AI 语音) ======
 DOMAIN-SUFFIX,elevenlabs.io
-
-# ====== PayPal 核心域名 (Core for API, Checkout, IPN) ======
-DOMAIN-SUFFIX,paypal.com
-DOMAIN-SUFFIX,paypalobjects.com
-DOMAIN-SUFFIX,paypalc3.com
-DOMAIN-SUFFIX,paypalc3.net
-DOMAIN-SUFFIX,paypalcorp.com
-DOMAIN-SUFFIX,paypal-mktg.com
-DOMAIN-SUFFIX,paypal.me
-
-# ====== PayPal 沙盒与IPN验证（可选）======
-DOMAIN-SUFFIX,api-m.paypal.com
-DOMAIN-SUFFIX,api-m.sandbox.paypal.com
-DOMAIN-SUFFIX,ipnpb.paypal.com
-DOMAIN-SUFFIX,ipnpb.sandbox.paypal.com
