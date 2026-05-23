@@ -31,13 +31,11 @@ DOMAIN,gemini.google.com
 DOMAIN,bard.google.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN,notebooklm.google
 
 # ====== 4. xAI / Grok (2026 最新主流 AI) ======
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.com
-
-# ====== 5. DeepSeek (国产之光大模型) ======
-DOMAIN-SUFFIX,deepseek.com
 
 # ====== 6. 微软 Copilot ======
 DOMAIN,copilot.microsoft.com
