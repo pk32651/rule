@@ -78,3 +78,12 @@ DOMAIN,notebooklm.google.com
 DOMAIN,notebooklm-pa.googleapis.com
 DOMAIN,content-notebooklm-pa.googleapis.com
 DOMAIN,securetoken.googleapis.com
+
+# =========================================================
+# 📦 Google Play 商店与服务框架强效下载补丁 (防止80%卡死)
+# =========================================================
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,gvt3.com
+DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,xn--ngstr-gza.com
