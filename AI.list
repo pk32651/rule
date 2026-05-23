@@ -31,7 +31,6 @@ DOMAIN,gemini.google.com
 DOMAIN,bard.google.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN,proactivebackend-pa.googleapis.com
-DOMAIN,notebooklm.google
 
 # ====== 4. xAI / Grok (2026 最新主流 AI) ======
 DOMAIN-SUFFIX,x.ai
@@ -65,3 +64,13 @@ DOMAIN-SUFFIX,elevenlabs.io
 # 使用 DOMAIN 精准匹配单个主机名，绝不误伤普通的 www.youtube.com 观看流量
 DOMAIN,studio.youtube.com
 DOMAIN,upload.youtube.com
+
+# ====== 13. Google NotebookLM 专属全家桶 (防 API 漏水) ======
+# 主站域名与子域名
+DOMAIN,notebooklm.google
+DOMAIN-SUFFIX,notebooklm.google
+
+# 核心后端高频通信与数据存取 API (极其重要，删笔记、存盘全靠它们)
+DOMAIN,notebooklm-pa.googleapis.com
+DOMAIN,content-notebooklm-pa.googleapis.com
+DOMAIN,securetoken.googleapis.com
