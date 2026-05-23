@@ -5,8 +5,8 @@
 
 # ====== 1. OpenAI / ChatGPT (去重全量整合) ======
 DOMAIN-KEYWORD,openai
-DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openaicomcdn.com
@@ -30,7 +30,9 @@ DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN,gemini.google.com
 DOMAIN,bard.google.com
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,ai.google.dev
 DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN-KEYWORD,alkalimira-pa
 
 # ====== 4. xAI / Grok (2026 最新主流 AI) ======
 DOMAIN-SUFFIX,x.ai
@@ -39,6 +41,7 @@ DOMAIN-SUFFIX,grok.com
 # ====== 6. 微软 Copilot ======
 DOMAIN,copilot.microsoft.com
 DOMAIN,sydney.bing.com
+DOMAIN-SUFFIX,copilot.microsoft
 
 # ====== 7. Perplexity (AI 搜索) ======
 DOMAIN-SUFFIX,perplexity.ai
@@ -67,8 +70,9 @@ DOMAIN,upload.youtube.com
 
 # ====== 13. Google NotebookLM 专属全家桶 (防 API 漏水) ======
 # 主站域名与子域名
-DOMAIN,notebooklm.google
+DOMAIN-KEYWORD,notebooklm
 DOMAIN-SUFFIX,notebooklm.google
+DOMAIN,notebooklm.google.com
 
 # 核心后端高频通信与数据存取 API (极其重要，删笔记、存盘全靠它们)
 DOMAIN,notebooklm-pa.googleapis.com
