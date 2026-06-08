@@ -63,11 +63,6 @@ DOMAIN-SUFFIX,api.groq.com
 # ====== 11. ElevenLabs (主流 AI 语音) ======
 DOMAIN-SUFFIX,elevenlabs.io
 
-# ====== 12. YouTube 创作者后台与视频上传 (精准抢先拦截) ======
-# 使用 DOMAIN 精准匹配单个主机名，绝不误伤普通的 www.youtube.com 观看流量
-DOMAIN,studio.youtube.com
-DOMAIN,upload.youtube.com
-
 # ====== 13. Google NotebookLM 专属全家桶 (防 API 漏水) ======
 # 主站域名与子域名
 DOMAIN-KEYWORD,notebooklm
