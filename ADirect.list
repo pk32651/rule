@@ -125,3 +125,20 @@ DOMAIN-SUFFIX,wangdian.com
 DOMAIN-SUFFIX,wdtdata.com
 # 静态资源可能涉及的阿里系 (通常 ChinaMax 已包含，但为了保险建议加上)
 DOMAIN-SUFFIX,alicdn.com
+
+#-- 雷神加速器 ---
+
+DOMAIN-SUFFIX,leigod.com
+DOMAIN-SUFFIX,leigod.cn
+DOMAIN-SUFFIX,leigod.net
+DOMAIN-KEYWORD,leigod
+
+#--- 网易 UU 加速器 ---
+
+DOMAIN-SUFFIX,uu.163.com
+DOMAIN-SUFFIX,uu.163yun.com
+DOMAIN-SUFFIX,uu.netease.com
+DOMAIN-KEYWORD,uu.163
+DOMAIN-KEYWORD,netease.uu
+DOMAIN-KEYWORD,accelerator
+DOMAIN-KEYWORD,gamebooster
