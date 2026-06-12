@@ -142,3 +142,10 @@ DOMAIN-KEYWORD,uu.163
 DOMAIN-KEYWORD,netease.uu
 DOMAIN-KEYWORD,accelerator
 DOMAIN-KEYWORD,gamebooster
+
+# 稀饭动漫 (anime.xifanacg.com) 直连规则
+- DOMAIN-SUFFIX,xfani.com
+- DOMAIN-SUFFIX,xifanacg.com
+- DOMAIN,anime.xifanacg.com
+- DOMAIN,www.xifanacg.com
+- DOMAIN,bbs.xfanchat.com
