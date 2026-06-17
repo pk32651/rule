@@ -149,3 +149,21 @@ DOMAIN-KEYWORD,gamebooster
 - DOMAIN,anime.xifanacg.com
 - DOMAIN,www.xifanacg.com
 - DOMAIN,bbs.xfanchat.com
+
+# 微软服务
+DOMAIN-SUFFIX,mp.microsoft.com
+DOMAIN-SUFFIX,delivery.mp.microsoft.com
+DOMAIN-SUFFIX,windowsupdate.com
+DOMAIN-SUFFIX,update.microsoft.com
+DOMAIN-SUFFIX,download.windowsupdate.com
+DOMAIN-SUFFIX,storequality.microsoft.com
+DOMAIN-SUFFIX,do.dsp.mp.microsoft.com
+DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com
+DOMAIN,displaycatalog.mp.microsoft.com
+DOMAIN,storesdk.dsx.mp.microsoft.com
+DOMAIN,storeedgefd.dsx.mp.microsoft.com
+DOMAIN,manage.devcenter.microsoft.com
+DOMAIN,1storecatalogrevocation.storequality.microsoft.com
+DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-SUFFIX,msftncsi.com
+
