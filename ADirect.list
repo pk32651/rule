@@ -144,11 +144,11 @@ DOMAIN-KEYWORD,accelerator
 DOMAIN-KEYWORD,gamebooster
 
 # 稀饭动漫 (anime.xifanacg.com) 直连规则
-- DOMAIN-SUFFIX,xfani.com
-- DOMAIN-SUFFIX,xifanacg.com
-- DOMAIN,anime.xifanacg.com
-- DOMAIN,www.xifanacg.com
-- DOMAIN,bbs.xfanchat.com
+DOMAIN-SUFFIX,xfani.com
+DOMAIN-SUFFIX,xifanacg.com
+DOMAIN,anime.xifanacg.com
+DOMAIN,www.xifanacg.com
+DOMAIN,bbs.xfanchat.com
 
 # 微软服务
 DOMAIN-SUFFIX,mp.microsoft.com
@@ -166,4 +166,3 @@ DOMAIN,manage.devcenter.microsoft.com
 DOMAIN,1storecatalogrevocation.storequality.microsoft.com
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,msftncsi.com
-
